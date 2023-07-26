@@ -1,0 +1,90 @@
+guid: 6541f09a-1594-4df0-a307-bd0c06f68c00
+liveboard:
+  name: test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total AGE by CITY and STATUS
+      tables:
+      - id: EMPLOYEE_FACT
+        name: EMPLOYEE_FACT
+        fqn: e75e2511-56e1-4848-9dc4-d1a346385df4
+      search_query: "[STATUS] [CITY] [AGE]"
+      answer_columns:
+      - name: STATUS
+      - name: CITY
+      - name: Total AGE
+      table:
+        table_columns:
+        - column_id: STATUS
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: CITY
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total AGE
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - STATUS
+        - CITY
+        - Total AGE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: STATUS
+        - column_id: CITY
+        - column_id: Total AGE
+        axis_configs:
+        - x:
+          - CITY
+          "y":
+          - Total AGE
+          color:
+          - STATUS
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"STATUS\",\"columnProperty\": {}},{\"columnId\": \"CITY\",\"columnProperty\": {}},{\"columnId\": \"Total AGE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c3faea15-faad-430f-9c15-a0493d2c116f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total AGE\"],\"isOpposite\": false}},{\"id\": \"8f4d357e-a299-4c7f-8e0f-6c01b24f0d34\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"CITY\"]}}],\"systemSeriesColors\": [{\"serieName\": \"active\",\"color\": \"#48D1E0\"},{\"serieName\": \"inactive\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: bd789994-5509-41e8-87cc-32b1d3f041f4
+  - id: Viz_2
+    answer:
+      name: Total AGE by CITY and STATUS
+      tables:
+      - id: EMPLOYEE_FACT
+        name: EMPLOYEE_FACT
+        fqn: e75e2511-56e1-4848-9dc4-d1a346385df4
+      search_query: "[STATUS] [CITY] [AGE]"
+      answer_columns:
+      - name: STATUS
+      - name: CITY
+      - name: Total AGE
+      table:
+        table_columns:
+        - column_id: STATUS
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: CITY
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total AGE
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - STATUS
+        - CITY
+        - Total AGE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: STATUS
+        - column_id: CITY
+        - column_id: Total AGE
+        axis_configs:
+        - x:
+          - CITY
+          "y":
+          - Total AGE
+          color:
+          - STATUS
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"STATUS\",\"columnProperty\": {}},{\"columnId\": \"CITY\",\"columnProperty\": {}},{\"columnId\": \"Total AGE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c3faea15-faad-430f-9c15-a0493d2c116f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total AGE\"],\"isOpposite\": false}},{\"id\": \"8f4d357e-a299-4c7f-8e0f-6c01b24f0d34\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"CITY\"]}}],\"systemSeriesColors\": [{\"serieName\": \"active\",\"color\": \"#48D1E0\"},{\"serieName\": \"inactive\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b173b2d8-c961-427e-980e-60ba50d132ba
