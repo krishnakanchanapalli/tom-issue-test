@@ -1,0 +1,44 @@
+guid: d4a9971f-0206-4b70-9c70-13e09d7276a6
+liveboard:
+  name: Diversity
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Count AGE by CITY
+      tables:
+      - id: EMPLOYEE_FACT
+        name: EMPLOYEE_FACT
+        fqn: e75e2511-56e1-4848-9dc4-d1a346385df4
+      search_query: "count [AGE] [CITY]"
+      answer_columns:
+      - name: Number of AGE
+      - name: CITY
+      table:
+        table_columns:
+        - column_id: CITY
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Number of AGE
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - CITY
+        - Number of AGE
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: CITY
+        - column_id: Number of AGE
+        axis_configs:
+        - x:
+          - CITY
+          "y":
+          - Number of AGE
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"CITY\",\"columnProperty\": {}},{\"columnId\": \"Number of AGE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"151743bb-fa49-4cd7-b3c2-115e4f2cca9f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of AGE\"],\"isOpposite\": false}},{\"id\": \"43b90315-b966-4508-b80d-c44e4f21e9a0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"CITY\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of AGE\",\"color\": \"#747E8C\"},{\"serieName\": \"amsterdam\",\"color\": \"#C26232\"},{\"serieName\": \"bangalore\",\"color\": \"#FFCCB3\"},{\"serieName\": \"bogota\",\"color\": \"#FF8142\"},{\"serieName\": \"brisbane\",\"color\": \"#6A4ABA\"},{\"serieName\": \"brussels\",\"color\": \"#D1C0FB\"},{\"serieName\": \"chennai\",\"color\": \"#8C62F5\"},{\"serieName\": \"chicago\",\"color\": \"#049160\"},{\"serieName\": \"helsinki\",\"color\": \"#9BE5CB\"},{\"serieName\": \"hong kong\",\"color\": \"#06BF7F\"},{\"serieName\": \"hyderabad\",\"color\": \"#BF982A\"},{\"serieName\": \"london\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mumbai\",\"color\": \"#FCC838\"},{\"serieName\": \"paris\",\"color\": \"#369FAA\"},{\"serieName\": \"san diego\",\"color\": \"#B5ECF2\"},{\"serieName\": \"san francisco\",\"color\": \"#48D1E0\"},{\"serieName\": \"seattle\",\"color\": \"#71A1F4\"},{\"serieName\": \"tokyo\",\"color\": \"#2359B6\"},{\"serieName\": \"vancouver\",\"color\": \"#ABC7F9\"},{\"serieName\": \"vantaa\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: db3169ee-a2f6-4228-bae1-63d0e032754c
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
